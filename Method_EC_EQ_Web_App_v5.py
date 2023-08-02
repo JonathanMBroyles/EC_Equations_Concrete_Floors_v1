@@ -266,6 +266,7 @@ def conceptual_EQs(systems, span_length, units, span_range_type):
 
 # create the multi-page web app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.SPACELAB])
+server = app.server
 
 home_page_layout = html.Div([
     html.H1('Estimating the embodied carbon of concrete floor systems for early-stage design',
